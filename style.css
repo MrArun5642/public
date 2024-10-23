@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1fcac8; 
+}
+.bikeimg{
+    width:auto;
+    height:70vh;
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1fcac8; 
+}
+.logo img {
+    width: 150px; 
+    height: auto;
+    display:flex;
+    justify-content: flex-start;
+    
+}
+.headerpart
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding: 20px 10%;
+    background: #188383;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size:200px;
+}
+
+.logo {
+    font-size: 1.3em;
+    color: white;
+    position:relative;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    margin-right:680px;
+    
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content:flex-end;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about, .comparison {
+    padding: 50px;
+    text-align: center;
+    background-color: #1fcac8; 
+}
+.about{
+    padding: 80px;
+    margin-top:-60px;
+}
+
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: #1fcac8; 
+    padding: 80px;
+    margin-top:-60px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.way
+{
+    margin-bottom:20px ;
+}
+
+
+.feature-item {
+    background: #188383;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.comparison table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.comparison th, .comparison td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-color: #1fcac8; 
+}
+
+
+
+
+
+
+
+
+.contact-form-container {
+    max-width: 600px; 
+    margin: 20px auto; 
+    background: #188383; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+   
+    
+}
+
+.form-title {
+    text-align: center; 
+}
+
+.form-label {
+    display: block; 
+    margin-top: 10px; 
+}
+
+.form-input, .form-textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.submit-button {
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+}

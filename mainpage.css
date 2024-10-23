@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #1fcac8;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+    cursor: pointer;
+    color:white;
+    text-decoration:dashed;
+
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-name {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    top:60px;
+}
+
+.profile-dropdown p {
+    margin: 5px 0;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#17b3b0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 90px;
+    cursor:pointer;
+    
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+
+main {
+    margin-top: 100px; 
+    padding: 20px;
+}
+
+.ride-form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+}
+
+.ride-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ride-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-btn {
+    background-color: #1fcac8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #17b3b0;
+}
+.bookride
+{
+    text-align:center;
+    margin-left:-50px;
+}

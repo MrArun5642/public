@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Way - Ride Sharing Page</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+            <form action="index.html" method="get">
+                <a href="index.html" class="logo">  
+                <h1>Go Way</h1>
+                </a>
+            </form>
+            <div class="profile-container">
+                <span class="profile-name">Mr Arun</span>
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile" class="profile-pic" onclick="toggleProfileDropdown()">
+                <div id="profileDropdown" class="profile-dropdown">
+                    <p><strong>Name:</strong>Mr Arun</p>
+                    <p><strong>Mobile:</strong> 9381620792</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+        <a href="#">Profile</a>
+        <a href="#">Wallet</a>
+        <a href="#">Number of Tokens</a>
+        <a href="#">Support</a>
+        <a href="index.html">Log Out</a>
+        
+    </div>
+
+    <main>
+        <h2 class="bookride">Book Your Ride</h2>
+        <form class="ride-form">
+            <label for="pickup">Pickup Location:</label>
+            <input type="text" id="pickup" name="pickup" placeholder="Enter your pickup location">
+
+            <label for="dropoff">Drop-off Location:</label>
+            <input type="text" id="dropoff" name="dropoff" placeholder="Enter your drop-off location">
+
+            <button type="submit" class="submit-btn">Find Ride</button>
+        </form>
+    </main>
+
+    <script src="mainpage.js"></script>
+</body>
+</html>

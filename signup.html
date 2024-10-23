@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <h1>GO WAY</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="sectionLoginpage">
+        <div class="login-container">
+            <div class="login-card">
+                <h2>Login</h2>
+                <form action="mainpage.html">
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+                <div class="signup-link">
+                    <p>Don't have an account? <a href="#sectionSignuppage" onclick="display('sectionSignuppage')">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <section id="sectionSignuppage">
+        <div class="signup-container">
+            <div class="signup-card">
+                <h2>Sign Up</h2>
+                <form action="mainpage.html">
+                    <div class="form-group">
+                        <label for="signup-mobile">Mobile Number</label>
+                        <input type="text" id="signup-mobile" name="mobile" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="otp-signup">OTP</label>
+                        <input type="text" id="otp-signup" name="otp" placeholder="Enter OTP" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Create Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </form>
+                <div class="login-link">
+                    <p>Already have an account? <a href="#sectionLoginpage" onclick="display('sectionLoginpage')">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="signup.js"></script>
+</body>
+</html>
